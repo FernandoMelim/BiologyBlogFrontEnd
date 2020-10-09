@@ -1,8 +1,20 @@
 <template>
   <div id="app">
-    <router-view/>
+    <PrincipalImage />
+    <Menu />
+    <router-view />
+    <Footer />
   </div>
 </template>
+
+<script>
+import Menu from "@/components/templates/Menu.vue";
+import Footer from "@/components/templates/Footer.vue";
+import PrincipalImage from "@/components/templates/PrincipalImage.vue";
+export default {
+  components: { Menu, PrincipalImage, Footer },
+};
+</script>
 
 <style>
 #app {
